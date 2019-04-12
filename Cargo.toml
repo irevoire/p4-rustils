@@ -1,0 +1,9 @@
+[package]
+name = "p4-rustils"
+version = "0.1.0"
+authors = ["irevoire <irevoire@hotmail.fr>"]
+edition = "2018"
+
+[dependencies]
+pnet = "*"
+serde_json = "*"
