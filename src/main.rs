@@ -17,7 +17,7 @@ impl Controller {
         Controller {
             sw_name: sw_name.to_string(),
             thrift_port,
-            cpu_port: topo.get_cpu_port(&sw_name),
+            cpu_port: topo.get_cpu_port_index(&sw_name, None),
             controller: simple_switch::SimpleSwitch::new(thrift_port),
             topo,
         }
